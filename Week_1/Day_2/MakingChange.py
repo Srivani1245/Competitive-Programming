@@ -1,13 +1,13 @@
 import unittest
 
 
-def possibilities(amount, denominations):
+def change_possibilities(amount_of_money, coin_denominations):
 	a= amount_of_money
 	b = len(coin_denominations)
-	collect_coins = coin_denominations
+	coins = coin_denominations
 	dp = [1]+[0]*a
 	for i in range(b): 
-	    for j in range(collect_coins[i], a+1): dp[j]+=dp[j-coins[i]]
+	    for j in range(coins[i], a+1): dp[j]+=dp[j-coins[i]]
 	return dp[-1]
 
 
