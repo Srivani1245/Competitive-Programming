@@ -16,17 +16,6 @@ def find_rotation_point(words):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 # Tests
 
 class Test(unittest.TestCase):
