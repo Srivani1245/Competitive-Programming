@@ -26,7 +26,7 @@ public class Solution {
             temp = temp*intArray[i];
         }
     
-        int temp = 1;
+         temp = 1;
         for (int i = intArray.length - 1; i >= 0; i--)
         {
             list2[i] = temp;
