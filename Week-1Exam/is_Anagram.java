@@ -12,20 +12,17 @@ public class is_Anagram
         {
             check_status = false;  
         }
-        else
-        {  
+        else{  
             char[] ArrayS1 = str1.toLowerCase().toCharArray();  
             char[] ArrayS2 = str2.toLowerCase().toCharArray();  
             Arrays.sort(ArrayS1);  
             Arrays.sort(ArrayS2);  
             check_status = Arrays.equals(ArrayS1, ArrayS2);  
         }  
-        if (check_status)
-        {  
+        if (check_status){  
             System.out.println("It is an Anagram");  
         }
-        else
-        {  
+        else{  
             System.out.println("It is not an Anagram");  
         }  
     }
@@ -41,5 +38,8 @@ public class is_Anagram
         Check_is_Anagram("Debit Card","Bad Credit");
         Check_is_Anagram("SiLeNt CAT","LisTen AcT");
         Check_is_Anagram("Dormitory","Dirty Room");
+        Check_is_Anagram("abc","ABC");
+        Check_is_Anagram("Dictionary","assert");
+        Check_is_Anagram("mother","father");
     }  
 }  
