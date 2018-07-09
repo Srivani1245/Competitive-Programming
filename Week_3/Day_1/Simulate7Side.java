@@ -12,9 +12,9 @@ class Solution {
         int roll1 = rand5();
         int roll2 = rand5();
 
-        int outcomeNumber = (roll1-1) * 5 + (roll2-1) + 1;
-        if (outcomeNumber > 21) continue;
-        return outcomeNumber % 7 + 1;
+        int finalNumber = (roll1-1) * 5 + (roll2-1) + 1;
+        if (finalNumber > 21) continue;
+        return finalNumber % 7 + 1;
     }
         // return 0;
     }
