@@ -1,18 +1,18 @@
 def my_function(arg):
 
     # Write the body of your function here
-    x=arg
+    a=arg
     count=0
-    k=14
-    y=0
-    while(y<x):
-            z=y
-            y=y+k
-            k=k-1
+    c=14
+    b=0
+    while(b<a):
+            x=b
+            b=b+c
+            c=c-1
             count=count+1
-    if(x==y):
+    if(a==b):
         return count
-    count=count+(x-z)
+    count=count+(a-x)
     return count
 
     # return 'running with %s' % arg
